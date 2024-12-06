@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => MyAppState();
+}
+
+class MyAppState extends State<MyApp> {
+  var scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        key: scaffoldKey,
+        drawer: new Drawer(
+          child: new ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Text('Drawer Header'),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                ),
+              ),
+              ListTile(
+                title: Text('Item 1'),
+                onTap: () {
+                  //Do some stuff here
+                  //Closing programmatically - very less practical use
+                  scaffoldKey.currentState.openEndDrawer();
+                },
+              )
+            ],
+          ),
+        ),
+        body: Stack(
+          children: <Widget>[
+            new Center(
+                child: new Column(
+              children: <Widget>[],
+            )),
+            Positioned(
+              left: 10,
+              top: 20,
+              child: IconButton(
+                icon: Icon(Icons.menu),
+                onPressed: () => scaffoldKey.currentState.openDrawer(),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

@@ -1,0 +1,91 @@
+shape
+carat
+color
+clarity
+fluo
+cut
+pol
+symmetry
+leb
+certificate no
+
+
+
+
+
+
+
+
+ Diamond Details
+Packet No.
+Shape
+Carat
+Color
+Clarity
+Fluorescence
+Location
+Cut
+Polish
+Symmetry
+Rap. Price
+Disc
+Price / Cts
+Value
+
+
+
+
+
+
+Lab Details
+Lab
+Certificate no
+
+
+
+
+
+Measurement Details
+Measurement
+Depth %
+Table %
+Ratio
+Cul
+Crown Angle
+Crown %
+Pavilion Angle
+Pavilion %
+Gridle
+
+
+
+
+
+
+
+
+Other Details
+Table Inclusion
+Shade
+Milky
+Open Table
+Open Crown
+Open Pavilion
+H  & A
+Eye Clean
+Eligible for Canada Mark
+Eligible for Forever Mark
+Type 2 A 
+
+
+
+
+
+
+
+Required Files 
+Image
+Mp4
+Video
+Asset Image
+GIA Certificate 
