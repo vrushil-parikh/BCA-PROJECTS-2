@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/sdjic" />
+
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnAppBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="onAppBarButtonClick"
+                        android:layout_marginRight="5dp"
+                        android:text="Application Bar" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnOrientation"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="onOrientationButtonClick"
+                        android:layout_marginLeft="5dp"
+                        android:text="Orientation \nDemo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/buttonToastDemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="onToastButtonClick"
+                        android:layout_marginRight="5dp"
+                        android:text="Toast Demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/buttonCustomToastDemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="onCustomToastButtonClick"
+                        android:layout_marginLeft="5dp"
+                        android:text="Custom Toast \nDemo" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/buttonToggleButtonDemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="onToggleButtonClick"
+                        android:layout_marginRight="5dp"
+                        android:text="Toggle Button \nDemo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/buttonCheckBoxDemo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:onClick="onCheckboxButtonClick"
+                        android:layout_marginLeft="5dp"
+                        android:text="Check Box \nDemo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onSpinnerButtonClick"
+                        android:text="Spinner Demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onAlertButtonOnClick"
+                        android:text="Alert Dialog \nBox Demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onListViewButtonClick"
+                        android:text="List View \nDemo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnCListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onCustomListViewButtonClick"
+                        android:text="Custom List \nView Demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnDTPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onDateButtonClick"
+                        android:text="Date Demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnTPicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onTimeButtonClick"
+                        android:text="Time Demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onProgressClick"
+                        android:text="Progress Bar" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnVerticalScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onVerticalScrollClick"
+                        android:text="Vertical \nScrollview" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnHorizontalScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onHorizontalScrollClick"
+                        android:text="Horizontal \nScrollview" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnImageSwitcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onImageSwitcherClick"
+                        android:text="Image \nSwitcher" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:textColor="#FF0000"
+                        android:id="@+id/btnImageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onImageSliderClick"
+                        android:text="Image \nSlider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1">
+                    <Button
+                        android:id="@+id/btnTextWatcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onTextWatcherClick"
+                        android:text="Text \nWatcher" />
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

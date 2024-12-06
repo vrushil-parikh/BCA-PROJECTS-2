@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="21dp"
+        android:textColor="@color/black"
+        android:text="Registration form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:ems="14"
+        android:background="@drawable/corner_rounded"
+        android:textColor="@color/black"
+        android:id="@+id/editAccountNo"
+        android:inputType="number"
+        android:hint="Enter the account no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:ems="14"
+        android:background="@drawable/corner_rounded"
+        android:textColor="@color/black"
+        android:id="@+id/editAccountPassword"
+        android:inputType="textPassword"
+        android:hint="Enter the account password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:ems="14"
+        android:inputType="number"
+        android:background="@drawable/corner_rounded"
+        android:textColor="@color/black"
+        android:id="@+id/editAccountBalance"
+        android:hint="Enter the account balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:text="Proceed"
+        android:textColor="@color/white"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
